@@ -1,0 +1,36 @@
+<div class="widget clearfix">
+    <h4>Contáctenos</h4>
+    <div id="quick-contact-form-result"></div>
+    <form id="quick-contact-form" name="quick-contact-form" netlify class="quick-contact-form nobottommargin">
+        <input type="text" class="required input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Nombre o Razón Social" />
+        <input type="text" class="required email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Correo electrónico" />
+        <textarea class="required input-block-level short-textarea" id="quick-contact-form-message" name="quick-contact-form-message" rows="30" cols="10" placeholder="Mensaje"></textarea>
+        <button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="btn btn-small btn-inverse nomargin" value="submit">Envíar mensaje</button>
+    </form>
+    <!--script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $("#quick-contact-form").validate({
+                messages: {
+                    'quick-contact-form-name': '',
+                    'quick-contact-form-email': '',
+                    'quick-contact-form-message': ''
+                },
+                submitHandler: function (form) {
+                    $(form).find('.btn').prepend('<i class="icon-spinner icon-spin"></i>').addClass('disabled').attr('disabled', 'disabled');
+                    $(form).ajaxSubmit({
+                        target: '#quick-contact-form-result',
+                        success: function () {
+                            $("#quick-contact-form").fadeOut(500, function () {
+                                $('#quick-contact-form-result').fadeIn(500);
+                            });
+                        },
+                        error: function () {
+                            $('#quick-contact-form-result').fadeIn(500);
+                            $("#quick-contact-form").find('.btn').remove('<i class="icon-spinner icon-spin"></i>').removeClass('disabled').removeAttr('disabled');
+                        }
+                    });
+                }
+            });
+        });
+    </script-->
+</div>

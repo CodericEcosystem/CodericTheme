@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<head>
+    {%- include cabeza.html -%}
+</head>
+<body class="stretched">
+    <div id="wrapper" class="clearfix">
+        <div id="top-bar">
+            <div class="container clearfix">
+                <div id="top-menu">
+                    {%- include navegacion-encabezado.html -%}
+                </div>
+                <div id="top-social">
+                    {%- include navegacion-social.html -%}
+                </div>
+            </div>
+        </div>
+        {%- include encabezado.html -%}
+        <main id="content">
+            {{ content }}
+        </main>
+        {%- include pie.html -%}
+        <div class="clear"></div>
+        <div id="copyrights" class="copyrights-dark">
+            <div class="container clearfix">
+                <div class="col_half">
+                    <p>Copyrights Coderic 2004-{{ site.time | date: '%Y' }} © Todos los derechos reservados.</p>
+                </div>
+                <div class="col_half col_last tright">
+                    {%- include navegacion-pie.html -%}
+                </div>
+            </div>
+        </div>
+        <div id="gotoTop" class="icon-angle-up"></div>
+        <script type="text/javascript" src="/assets/coderic/js/custom.js"></script>
+</body>

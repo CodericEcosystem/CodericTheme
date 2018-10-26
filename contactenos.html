@@ -1,0 +1,77 @@
+---
+layout: pagina
+title: Contáctenos
+permalink: /contactenos.html
+---
+<div class="col_two_third nobottommargin">
+    <div id="contact-form-container">
+        <h2>Envíenos un <span>Correo electrónico</span></h2>
+        <div id="contact-form-result"></div>
+        <form class="nobottommargin" id="template-contactform" netlify name="template-contactform" action="/recibido.html" method="post">
+            <div class="col_one_third nobottommargin">
+                <label for="template-contactform-name">Nombres <small>*</small></label>
+                <input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="required input-block-level" />
+            </div>
+            <div class="col_one_third nobottommargin">
+                <label for="template-contactform-email">Correo electrónico <small>*</small></label>
+                <input type="text" id="template-contactform-email" name="template-contactform-email" value="" class="required email input-block-level" />
+            </div>
+            <div class="col_one_third nobottommargin col_last">
+                <label for="template-contactform-service">Destino</label>
+                <select id="template-contactform-service" name="template-contactform-service" class="input-block-level">
+                    <option value="">-- Seleccione --</option>
+                    <option value="atencion">Atención</option>
+                    <option value="soporte">Soporte</option>
+                    <option value="soporte">Proyectos</option>
+                    <option value="facturacion">Facturación</option>
+                    <option value="ventas">Ventas</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="info">Información</option>
+                    <option value="otro">Cualquiera</option>
+                </select>
+            </div>
+            <div class="clear"></div>
+            <div class="col_full nobottommargin">
+                <label for="template-contactform-subject">Asunto <small>*</small></label>
+                <input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required input-block-level" />
+            </div>
+            <div class="col_full nobottommargin">
+                <label for="template-contactform-message">Mensaje <small>*</small></label>
+                <textarea class="required input-block-level" id="template-contactform-message" name="template-contactform-message" rows="10" cols="30"></textarea>
+            </div>
+            <div class="col_full nobottommargin hidden">
+                <label for="template-contactform-botcheck">Capcha</label>
+                <textarea class="required input-block-level" id="template-contactform-botcheck" name="template-contactform-botcheck" rows="10" cols="30"></textarea>
+            </div>
+            <div class="col_full nobottommargin">
+                <button class="btn" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Envíar mensaje</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="col_one_third entry_content col_last nobottommargin">
+    <div class="topmargin">
+        <div class="product-feature"><span class="icon-map-marker"></span><h3>Sede Principal</h3>
+            <p>Urb Diego I Calle 1 Casa 20<br />Valencia 2001, Carabobo - Venezuela</p></div>
+        <div class="product-feature"><span class="icon-phone"></span><h3>Llámenos</h3>
+            <ul class="bottommargin">
+                <li class="icon-ok"><span><a href="tel:+585002633742">0500-CODERIC</a></span></li>
+                <li class="icon-ok"><span><a href="tel:+585002633742">0500-263-3742</a></span></li>
+            </ul>
+        </div>
+        <div class="product-feature"><span class="icon-envelope-alt"></span><h3>Correos electrónicos</h3>
+            <ul class="bottommargin">
+                <li class="icon-ok"><span><a href="#">info@coderic.co.ve</a></span></li>
+                <li class="icon-ok"><span><a href="#">ventas@coderic.co.ve</a></span></li>
+                <li class="icon-ok"><span><a href="#">soporte@coderic.co.ve</a></span></li>
+            </ul>
+        </div>
+        <div class="product-feature"><span class="icon-heart-empty"></span><h3>¿Necesita soporte? ¡Obténgalo ahora!</h3>
+            <ul class="bottommargin">
+                <li class="icon-ok"><span><a href="#">Centro de soporte</a></span></li>
+                <li class="icon-ok"><span><a href="#">Nuestros foros</a></span></li>
+                <li class="icon-ok"><span><a href="#">Chat en línea</a></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
