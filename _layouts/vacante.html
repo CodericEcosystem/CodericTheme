@@ -1,0 +1,77 @@
+---
+layout: default-es
+lang: es
+---
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "JobPosting",
+  "title": "{{ page.jobTitle | escape }}",
+  "description" : "{{ page.description | escape }}",
+  "responsibilities": "{{ page.responsibilities | escape }}",
+  "skills": "{{ page.responsibilities | escape }}",
+  "qualifications": "{{ page.responsibilities | escape }}",
+  "educationRequirements": "{{ page.responsibilities | escape }}",
+  "experienceRequirements": "{{ page.responsibilities | escape }}",
+  "identifier": {
+    "@type": "PropertyValue",
+    "name": "Coderic",
+    "value": "{{ page.url | absolute_url }}"
+  },
+  "hiringOrganization" : {
+      "@type": "Organization",
+      "@id": "https://coderic.co.ve",
+      "name": "Coderic, S.A."
+  },
+  "industry": "{{ page.responsibilities | escape }}",
+  "employmentType": "{{ page.responsibilities | escape }}",
+  "workHours": "{{ page.responsibilities | escape }}",
+  "datePosted": "{{ page.date }}",
+  "validThrough" : "{{ page.validThrough }}",
+ 
+  "jobLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ page.direccion.streetAddress }}",
+      "addressLocality": "{{ page.direccion.addressLocality }}",
+      "postalCode": "{{ page.direccion.postalCode }}",
+      "addressRegion": "{{ page.direccion.addressRegion }}",
+      "addressCountry": "{{ page.direccion.addressCountry }}"
+    }
+  },
+  "baseSalary": {
+    "@type": "MonetaryAmount",
+    "currency": "VEF",
+    "value": {
+      "@type": "QuantitativeValue",
+      "minValue": {{ page.minValue }},
+      "maxValue": {{ page.maxValue }},
+      "value": {{ page.value }},
+      "unitText": "{{ page.unitText }}"
+    }
+  },  
+   "salaryCurrency": "VES"
+}
+</script>
+<article>
+    <header id="page-title">
+        <div class="container clearfix">
+            <h1>{{ page.title | escape }} <span>
+                    {%- if page.subtitle -%}
+                    / {{ page.subtitle | escape }}
+                    {%- endif -%}
+                </span></h1>
+            <div id="top-search">
+                <form id="top-search-form" action="/resultados.html" method="get">
+                    <input type="text" id="top-search-input" name="q" value="" placeholder="Buscar" />
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="content-wrap">
+        <div class="container clearfix">
+            {{ content }}
+        </div>
+    </div>
+</article>
