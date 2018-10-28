@@ -11,6 +11,8 @@
 {%- seo -%}
 {%- if jekyll.environment == 'production' and site.google_analytics -%}
 {%- include analytics-google.html -%}
+{%- endif -%}
+{%- if jekyll.environment == 'production' and site.facebook.app_id -%}
 {%- include analytics-facebook.html -%}
 {%- endif -%}
 <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Open+Sans:400,300,600,700" media="screen" rel="stylesheet" type="text/css">
